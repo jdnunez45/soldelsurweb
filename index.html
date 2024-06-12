@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Popular Sol Del Sur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-texto">
+            <img src="rsc/logo.png" alt="Logo" class="logo">
+            <span class="titulo">Escuela Popular Sol Del Sur</span>
+        </div>
+        <div id="hora-actual" class="hora"></div>
+        <nav>
+            <ul>              
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenidos a la Escuela Popular Sol Del Sur</h1>
+            <p>Aquí podrás encontrar información sobre tu comunidad, además de las actividades y noticias.</p>
+            <div class="contenedor-imagenes">
+                <div class="imagen">
+                    <img src="rsc/1.jpg" alt="Imagen 1">
+                </div>
+                <div class="imagen">
+                    <img src="rsc/3.jpg" alt="Imagen 2">
+                </div>
+                <div class="imagen">
+                    <img src="rsc/2.jpg" alt="Imagen 3">
+                </div>
+                <div class="imagen">
+                    <img src="rsc/4.jpg" alt="Imagen 4">
+                </div>
+            </div>
+        </section>
+
+        <div id="chat-container">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Escuela Popular Sol Del Sur &copy; 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

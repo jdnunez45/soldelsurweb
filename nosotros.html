@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Popular Sol Del Sur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-texto">
+            <img src="rsc/logo.png" alt="Logo" class="logo">
+            <span class="titulo">Escuela Popular Sol Del Sur</span>
+        </div>
+        <div id="hora-actual" class="hora"></div>
+        <nav>
+            <ul> 
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="nosotros">
+            <h2>Nosotros</h2>
+            <div class="descripcion-universidad">
+                <img src="rsc/ucatolica.png" alt="Foto de la Universidad" class="foto-universidad">
+                <p class="texto-universidad">Somos un grupo de estudiantes universitarios comprometidos con el servicio comunitario. Nuestro equipo está conformado por 3 personas con habilidades en programación y diseño, unidos por el deseo de hacer una diferencia positiva en el mundo. Creemos en el poder de la tecnología para transformar vidas y estamos comprometidos a utilizar nuestras habilidades para el bienestar de la comunidad.</p>
+            </div>
+        </section>
+
+        <div id="chat-container">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Escuela Popular Sol Del Sur &copy; 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

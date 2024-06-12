@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(245, 245, 145);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.logo-texto {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px; /* Ajusta el tamaño del logo según necesites */
+    margin-right: 10px;
+}
+
+.titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.carrusel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel-inner {
+    display: flex;
+    width: 400%; /* 4 imágenes */
+    animation: slide 60s infinite; /* Duración de la animación */
+}
+
+.carrusel-inner img {
+    width: 8%;
+    height: 600px; /* Ajusta la altura del carrusel según necesites */
+    object-fit: cover; /* Para que las imágenes mantengan su proporción */
+}
+
+@keyframes slide {
+    0%, 25%, 50%, 75%, 100% { transform: translateX(0); }
+    20%, 45% { transform: translateX(-100%); }
+    40%, 65% { transform: translateX(-200%); }
+    60%, 85% { transform: translateX(-300%); }
+    80% { transform: translateX(0); }
+}
+
+.tablon-anuncios {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.tablon-anuncios h3 {
+    margin-top: 0;
+}
+
+.tablon-anuncios ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tablon-anuncios ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.tablon-anuncios ul li:last-child {
+    border-bottom: none;
+}
+
+.blog article {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.blog h3 {
+    margin-top: 0;
+}
+
+.blog .fecha {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.blog .contenido {
+    font-size: 16px;
+}
+
+.descripcion-universidad {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descripcion-universidad img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.texto-universidad {
+    font-size: 16px;
+    max-width: 800px;
+    text-align: center;
+}
+
+#calendario {
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo-texto {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    .carrusel-inner img {
+        height: auto;
+    }
+
+    .tablon-anuncios,
+    .blog article,
+    .descripcion-universidad {
+        padding: 15px;
+    }
+
+    .descripcion-universidad img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+/* styles.css */
+#chat-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#chat-messages {
+    height: 200px;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#chat-input {
+    width: calc(100% - 80px);
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+#send-button {
+    width: 70px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+/* styles.css */
+.contenedor-imagenes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.imagen {
+    width: 100%;
+    height: auto;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+

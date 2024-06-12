@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escuela Popular Sol Del Sur</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-texto">
+            <img src="rsc/logo.png" alt="Logo" class="logo">
+            <span class="titulo">Escuela Popular Sol Del Sur</span>
+        </div>
+        <div id="hora-actual" class="hora"></div>
+        <nav>
+            <ul>  
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="noticias">
+            <h2>Noticias</h2>
+            <div class="blog">
+                <article>
+                    <h3>Título del Artículo 1</h3>
+                    <p class="fecha">5 de junio, 2024</p>
+                    <p class="contenido">Contenido del artículo 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna euismod, facilisis libero ac, laoreet ex.</p>
+                </article>
+                <article>
+                    <h3>Título del Artículo 2</h3>
+                    <p class="fecha">4 de junio, 2024</p>
+                    <p class="contenido">Contenido del artículo 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna euismod, facilisis libero ac, laoreet ex.</p>
+                </article>
+                <article>
+                    <h3>Título del Artículo 3</h3>
+                    <p class="fecha">3 de junio, 2024</p>
+                    <p class="contenido">Contenido del artículo 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non urna euismod, facilisis libero ac, laoreet ex.</p>
+                </article>
+            </div>
+        </section>
+
+        <div id="chat-container">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+            <button id="send-button">Enviar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Escuela Popular Sol Del Sur &copy; 2024</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
